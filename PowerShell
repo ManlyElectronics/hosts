@@ -9,15 +9,12 @@ $PSDefaultParameterValues = @{'Out-File:Encoding' = 'UTF8'};
 (Get-Content 1.txt) + (Get-Content 2.txt) | Sort-Object | Get-Unique | Where-Object {$_ -match '^0\.0\.0\.0'} | Set-Content 12JoinedAndCleaned.txt
 
 
+Manualy:
 
-To do
-
-# add first lanes from the system. 
+# add first lanes from the origianl host file. such as:
 
 127.0.0.1	localhost
-127.0.1.1	DRouter
 
-# The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
@@ -26,3 +23,7 @@ ff02::2 ip6-allrouters
 
 # rename 12JoinedAndCleaned.txt to hosts
 # upload to your system 
+
+To do
+
+make command to retain and update first lines

@@ -2,7 +2,7 @@
 # 2.txt - new host file
 # 12JoinedAndCleaned.txt - result 
 
-# forcing sestion output file in UTF8 to reduce size and time to process. 
+# forcing a session output file in UTF8 to reduce size and time to process. by defult PowerShell saves in UTF16L or something witch does not work with anything
 $PSDefaultParameterValues = @{'Out-File:Encoding' = 'UTF8'};
 
 # joining files and removing lines not starting with 0.0.0.0

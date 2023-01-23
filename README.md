@@ -2,4 +2,4 @@
 # thanks to 
 # sschuberth at https://stackoverflow.com/users/1127485/sschuberth
 # someone at https://docs.microsoft.com/en-us/answers/questions/405610/powershell-change-save-encoding-how-to-convert-sev.html
-# chat.openai.com
+# https://chat.openai.com

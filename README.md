@@ -1,4 +1,5 @@
-Commands update / join files with PowerShell.
+Commands to update / join host files with PowerShell
+
 requirements: Windows 7 - 11
 
 thanks to 

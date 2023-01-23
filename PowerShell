@@ -1,6 +1,11 @@
 # 1.txt - old host file
 # 2.txt - new host file
-# 12JoinedAndCleaned.txt - updated hosts and lines not starting with 0.0.0.0 removed 
+# 12JoinedAndCleaned.txt - result 
+
+# forcing sestion output file in UTF8 to reduce size and time to process. 
+$PSDefaultParameterValues = @{'Out-File:Encoding' = 'UTF8'};
+
+# joining files and removing lines not starting with 0.0.0.0
 (Get-Content 1.txt) + (Get-Content 2.txt) | Sort-Object | Get-Unique | Where-Object {$_ -match '^0\.0\.0\.0'} | Set-Content 12JoinedAndCleaned.txt
 
 

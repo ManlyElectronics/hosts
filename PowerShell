@@ -1,0 +1,23 @@
+# 1.txt - old host file
+# 2.txt - new host file
+# 12JoinedAndCleaned.txt - updated hosts and lines not starting with 0.0.0.0 removed 
+(Get-Content 1.txt) + (Get-Content 2.txt) | Sort-Object | Get-Unique | Where-Object {$_ -match '^0\.0\.0\.0'} | Set-Content 12JoinedAndCleaned.txt
+
+
+
+To do
+
+# add first lanes from the system. 
+
+127.0.0.1	localhost
+127.0.1.1	DRouter
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+# rename to hosts
+# upload to your system 

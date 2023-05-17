@@ -1,6 +1,6 @@
-Commands to update / join host files with PowerShell
+What is it: PowerShell script to join hosts files and remove comments
 
-requirements: Windows 7 - 11
+Requirements: Windows 7 - 11
 
 hosts can be obtained from various sources such as github.com/StevenBlack/hosts
 

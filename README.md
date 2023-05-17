@@ -2,7 +2,7 @@ Commands to update / join host files with PowerShell
 
 requirements: Windows 7 - 11
 
-hosts can be obtained from various sources such as https://github.com/StevenBlack/hosts
+hosts can be obtained from various sources such as github.com/StevenBlack/hosts
 
 Thanks to:
 

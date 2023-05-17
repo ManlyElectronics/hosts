@@ -10,6 +10,5 @@ $PSDefaultParameterValues = @{'Out-File:Encoding' = 'UTF8'};
 (Get-Content 1.txt) + (Get-Content 2.txt) | Sort-Object | Get-Unique | Where-Object {$_ -match '^0\.0\.0\.0'} | Set-Content hosts
 
 
-# Manualy add first lanes from the origianl host file, such as 127.0.0.1	localhost
-# rename 12JoinedAndCleaned.txt to hosts
-# upload to your system 
+# You may wish manualy add first lanes from the origianl host file, such as 127.0.0.1	localhost
+# upload to your system replacing hosts file

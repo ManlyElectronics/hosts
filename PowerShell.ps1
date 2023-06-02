@@ -3,7 +3,7 @@
 # place 1.txt and 2.txt and this script in one folder, like New Folder on a Desktop 
 # run ps1 script with Right click or Edit with Power Shell ISE and run from there
 
-# forcing a session output file in UTF8 to reduce size and time to process. By defult PowerShell saves in UTF-16LE witch does not work with anything
+# forcing a session output file in UTF8 to reduce size and time to process. Why? By defult PowerShell saves txt in UTF-16LE witch is twice big and does not work as hosts
 $PSDefaultParameterValues = @{'Out-File:Encoding' = 'UTF8'};
 
 # joining files and removing lines not starting with 0.0.0.0
